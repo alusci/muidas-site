@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muidas — Music</title>
+    <meta name="description" content="Muidas — music links" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="bg" aria-hidden="true"></div>
+    <div class="scrim" aria-hidden="true"></div>
+
+    <header class="header">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="Muidas home">MUIDAS</a>
+
+        <div class="navlinks">
+          <a href="#music">MUSIC</a>
+          <a href="#about">ABOUT</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+
+        <div class="navicons" aria-label="Social links">
+          <a class="icon" href="https://open.spotify.com/artist/2AxYJdC26MboByGB1psv8K?si=t-22s0MxSdi_eVanXTw00Q" target="_blank" rel="noreferrer">Spotify</a>
+          <a class="icon" href="https://www.youtube.com/channel/UCRoZtw_STDLfrs6cMv9GHYg" target="_blank" rel="noreferrer">YouTube</a>
+          <a class="icon" href="https://music.apple.com/us/artist/muidas/1511292248" target="_blank" rel="noreferrer">Apple</a>
+          <a class="icon" href="https://music.amazon.com/artists/B087ZM4Q2L/muidas" target="_blank" rel="noreferrer">Amazon</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top" class="main">
+      <section id="music" class="panel" aria-label="Music">
+        <h1 class="title">MUIDAS</h1>
+        <p class="subtitle">Listen / Follow</p>
+
+        <div class="spotify">
+          <iframe
+            style="border-radius:12px"
+            src="https://open.spotify.com/embed/artist/2AxYJdC26MboByGB1psv8K"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            title="Spotify embed"
+          ></iframe>
+        </div>
+
+        <div class="buttons" role="navigation" aria-label="Music services">
+          <a class="btn" href="https://open.spotify.com/artist/2AxYJdC26MboByGB1psv8K?si=t-22s0MxSdi_eVanXTw00Q" target="_blank" rel="noreferrer">SPOTIFY</a>
+          <a class="btn" href="https://music.apple.com/us/artist/muidas/1511292248" target="_blank" rel="noreferrer">APPLE MUSIC</a>
+          <a class="btn" href="https://www.youtube.com/channel/UCRoZtw_STDLfrs6cMv9GHYg" target="_blank" rel="noreferrer">YOUTUBE</a>
+          <a class="btn" href="https://music.amazon.com/artists/B087ZM4Q2L/muidas" target="_blank" rel="noreferrer">AMAZON MUSIC</a>
+        </div>
+      </section>
+
+      <section id="about" class="panel small">
+        <h2>About</h2>
+        <p>Muìdas is music for slowing down. Blending ambient soundscapes, soft piano and textured 
+            guitars, these pieces are made for calm focus—whether you’re working, reading, 
+            decompressing after a long day, or simply taking a breath. 
+            If you’re looking for music to relax, meditate, or drift into a quieter headspace, 
+            press play and relax for a while.</p>
+      </section>
+
+      <section id="contact" class="panel small">
+        <h2>Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:info@muidas.com">info@muidas.com</a>
+          <br />
+          Instagram:
+          <a
+            href="https://www.instagram.com/muidas.music/?hl=en"
+            target="_blank"
+            rel="noreferrer"
+          >
+            @muidas.music
+          </a>
+        </p>
+      </section>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Muidas</span>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
